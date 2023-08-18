@@ -10,6 +10,7 @@ import HomePage from "./pages/Home";
 import ProductPage from "./pages/ProductPage";
 import RootLayout from "./pages/Root";
 import ErrorPage from "./pages/Error";
+import ProductDetails from "./pages/ProductDetails";
 
 // const routeDefination = createRoutesFromElements(
 //   <Route>
@@ -31,8 +32,12 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "/product",
+        path: "/products",
         element: <ProductPage />,
+      },
+      {
+        path: "/products/:productId",
+        element: <ProductDetails />,
       },
     ],
   },

@@ -2,13 +2,13 @@ import { Link, useNavigate } from "react-router-dom";
 const HomePage = () => {
   const navigate = useNavigate();
   const navigateHandler = () => {
-    navigate("/product");
+    navigate("/products");
   };
   return (
     <>
       <h1>Hello Home Page</h1>
       <p>
-        <Link to="/product">Go to product page</Link>
+        <Link to="/products">Go to product page</Link>
       </p>
       <button onClick={navigateHandler}>useNavigate</button>
     </>
