@@ -1,15 +1,33 @@
 import { Link } from "react-router-dom";
 
+const DUMMY_PRODUCTS = [
+  {
+    id: "p1",
+    title: "Product 1",
+  },
+  {
+    id: "p2",
+    title: "Product 2",
+  },
+  {
+    id: "p3",
+    title: "Product 3",
+  },
+  {
+    id: "p4",
+    title: "Product 4",
+  },
+];
 const ProductPage = () => {
   return (
     <>
       <h1>Product Page</h1>
       <ul>
-        <Link to="/products/1">Product 1</Link>
-        <Link to="/products/2">Product 2</Link>
-        <Link to="/products/3">Product 3</Link>
-        <Link to="/products/4">Product 4</Link>
-        <Link to="/products/5">Product 5</Link>
+        {DUMMY_PRODUCTS.map((prod) => (
+          <li>
+            <Link to={`/products/${prod.id}`}>{prod.title}</Link>
+          </li>
+        ))}
       </ul>
     </>
   );
