@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/Home";
 import ProductPage from "./pages/ProductPage";
 import RootLayout from "./pages/Root";
+import ErrorPage from "./pages/Error";
 
 // const routeDefination = createRoutesFromElements(
 //   <Route>
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
