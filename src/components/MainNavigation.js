@@ -12,7 +12,7 @@ const MainNavigation = () => {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
-              to="/"
+              to=""
               end
             >
               Home
@@ -23,7 +23,7 @@ const MainNavigation = () => {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
-              to="/products"
+              to="products"
             >
               Product
             </NavLink>

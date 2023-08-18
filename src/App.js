@@ -28,15 +28,15 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <HomePage />,
       },
       {
-        path: "/products",
+        path: "products",
         element: <ProductPage />,
       },
       {
-        path: "/products/:productId",
+        path: "products/:productId",
         element: <ProductDetails />,
       },
     ],
